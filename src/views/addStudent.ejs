@@ -1,0 +1,33 @@
+
+
+<main>
+  <h2>Add Student</h2>
+  
+  <form action="/addStudent" method="POST">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="college">College</label>
+      <input type="text" class="form-control" id="college" name="college" required>
+    </div>
+    <div class="form-group">
+      <label for="status">Status</label>
+      <select class="form-control" id="status" name="status" required>
+        <option value="placed">Placed</option>
+        <option value="not_placed">Not Placed</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="dsaScore">DSA Score</label>
+      <input type="number" class="form-control" id="dsaScore" name="dsaScore" required>
+    </div>
+    <div class="form-group">
+      <label for="webDScore">WebD Score</label>
+      <input type="number" class="form-control" id="webDScore" name="webDScore" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Student</button>
+  </form>
+  
+</main>

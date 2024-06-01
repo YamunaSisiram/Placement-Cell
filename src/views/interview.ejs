@@ -1,0 +1,22 @@
+
+
+<main>
+  <h2>Interviews</h2>
+  <a href="/interviews/add" class="btn btn-success mb-3">Add Interview</a>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Company</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% interviews.forEach(interview => { %>
+        <tr>
+          <td><%= interview.companyName %></td>
+          <td><%= interview.date.toDateString() %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</main>

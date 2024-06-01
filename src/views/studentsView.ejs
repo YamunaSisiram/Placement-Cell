@@ -1,0 +1,32 @@
+<main>
+<h2>Students</h2>
+
+<!-- <div class="add-student-form">
+    <form action="/addStudent" method="get">
+        <button type="submit" class="add-btn">Add Student</button>
+    </form>
+</div> -->
+<a href="/addStudent" class="btn btn-success mb-3">Add Student</a>
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>College</th>
+        <th>Status</th>
+        <th>DSA Score</th>
+        <th>WebD Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% students.forEach(student => { %>
+        <tr>
+          <td><%= student.name %></td>
+          <td><%= student.college %></td>
+          <td><%= student.status %></td>
+          <td><%= student.dsaScore %></td>
+          <td><%= student.webDScore %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</main>
